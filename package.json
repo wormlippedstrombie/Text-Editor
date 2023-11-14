@@ -7,9 +7,9 @@
     "start:dev": "concurrently \"npm run server\" \"npm run client\"",
     "start": "node server.js",
     "server": "nodemon server.js",
-    "build": "build",
-    "install": "install",
-    "client": "client"
+    "build": "webpack --config webpack.config.js",
+    "install": "npm install",
+    "client": "npm run start-client"
   },
   "keywords": [],
   "author": "",
