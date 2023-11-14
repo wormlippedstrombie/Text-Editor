@@ -4,6 +4,7 @@
   "description": "",
   "main": "server.js",
   "scripts": {
+    "postinstall": "cd client && npm install",
     "start:dev": "concurrently \"npm run server\" \"npm run client\"",
     "start": "node server.js",
     "server": "nodemon server.js",
